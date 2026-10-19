@@ -2,15 +2,30 @@
 const menuToggle = document.querySelector(".menu-toggle");
 const navigation = document.querySelector(".navigation");
 
-menuToggle.addEventListener("click", () => {
-  const isOpen = navigation.classList.toggle("is-open");
+if (menuToggle && navigation) {
+  menuToggle.addEventListener("click", () => {
+    const isExpanded =
+      menuToggle.getAttribute("aria-expanded") === "true";
 
-  menuToggle.setAttribute("aria-expanded", String(isOpen));
-});
+    menuToggle.setAttribute(
+      "aria-expanded",
+      String(!isExpanded)
+    );
 
-navigation.querySelectorAll("a").forEach((link) => {
-  link.addEventListener("click", () => {
-    navigation.classList.remove("is-open");
-    menuToggle.setAttribute("aria-expanded", "false");
+    navigation.classList.toggle("is-open", !isExpanded);
   });
-});
+
+  navigation.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      menuToggle.setAttribute("aria-expanded", "false");
+      navigation.classList.remove("is-open");
+    });
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      menuToggle.setAttribute("aria-expanded", "false");
+      navigation.classList.remove("is-open");
+    }
+  });
+}

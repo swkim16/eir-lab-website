@@ -4,22 +4,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="EIR Lab - Engineering intelligent and bio-inspired robotic systems.">
+
+  <meta
+    name="description"
+    content="EIR Lab at SeoulTech develops soft robots, bio-inspired robotic systems, smart structures, and wearable devices."
+  >
+
+  <meta name="theme-color" content="#0b0e13">
+
   <title>EIR Lab | SeoulTech</title>
+
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
-<body>
-  <header class="site-header">
-    <a class="brand" href="#home">EIR LAB</a>
 
-    <button class="menu-toggle"
-      aria-label="Toggle navigation"
-      aria-expanded="false">
-      Menu ☰
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="EIR Lab Home">
+      EIR<span>LAB</span>
+    </a>
+
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+      aria-controls="main-navigation"
+    >
+      <span></span>
+      <span></span>
     </button>
 
-    <nav class="navigation" aria-label="Main navigation">
+    <nav class="navigation" id="main-navigation">
       <a href="#research">Research</a>
       <a href="#people">People</a>
       <a href="#publications">Publications</a>
@@ -29,109 +46,360 @@
   </header>
 
   <main>
+    <!-- 01. Hero -->
     <section class="hero" id="home">
-      <div class="hero-content">
+      <div class="hero-art" aria-hidden="true">
+        <div class="hero-orbit orbit-one"></div>
+        <div class="hero-orbit orbit-two"></div>
+        <div class="hero-core"></div>
+      </div>
+
+      <div class="hero-content container">
         <p class="eyebrow">
           SMART MATERIALS · SOFT ROBOTICS · BIO-INSPIRED SYSTEMS
         </p>
 
-        <h1>Engineering Robots<br>Inspired by Nature.</h1>
+        <h1>
+          Engineering Robots<br>
+          <span>Inspired by Nature.</span>
+        </h1>
 
         <p class="hero-description">
-          We develop intelligent robotic mechanisms, smart structures,
+          We design intelligent robotic mechanisms, smart structures,
           and wearable systems that connect engineering with the real world.
         </p>
 
         <div class="hero-actions">
           <a class="button button-primary" href="#research">
-            Explore our research
+            Explore our research <span>↗</span>
           </a>
-          <a class="button button-secondary" href="#people">
-            Meet the team →
+
+          <a class="button button-outline" href="#people">
+            Meet the team <span>→</span>
           </a>
         </div>
       </div>
 
-      <div class="hero-caption">
-        EIR LAB · SEOULTECH
+      <div class="hero-bottom container">
+        <span>ENGINEERING INTELLIGENT ROBOTICS</span>
+        <a href="#research">SCROLL TO EXPLORE ↓</a>
       </div>
     </section>
 
-    <section class="section" id="research">
-      <p class="eyebrow">WHAT WE DO</p>
-      <h2>Research at EIR Lab</h2>
-      <p class="section-intro">
-        We explore new robotic mechanisms and intelligent systems
-        through design, fabrication, and experimental validation.
-      </p>
+    <!-- 02. Research -->
+    <section class="section container" id="research">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">WHAT WE DO</p>
+          <h2>Research at EIR Lab.</h2>
+        </div>
+
+        <p class="section-description">
+          We explore new robotic mechanisms and intelligent systems
+          through design, fabrication, analysis, and experimentation.
+        </p>
+      </div>
 
       <div class="research-grid">
-        <article class="research-card">
-          <span class="card-number">01</span>
-          <h3>Soft Robotics</h3>
-          <p>Flexible mechanisms and compliant robotic systems.</p>
-        </article>
+        <a class="research-card research-card-one" href="research.html#soft-robotics">
+          <div class="card-top">
+            <span>01 / MECHANISMS</span>
+            <span class="card-arrow">↗</span>
+          </div>
+          <div class="card-content">
+            <p class="card-label">COMPLIANT SYSTEMS</p>
+            <h3>Soft Robotics</h3>
+            <p>
+              Flexible mechanisms and compliant robotic systems
+              for adaptive interaction.
+            </p>
+          </div>
+        </a>
 
-        <article class="research-card">
-          <span class="card-number">02</span>
-          <h3>Bio-inspired Robots</h3>
-          <p>Robotic designs inspired by biological structures.</p>
-        </article>
+        <a class="research-card research-card-two" href="research.html#bio-inspired">
+          <div class="card-top">
+            <span>02 / BIOLOGY</span>
+            <span class="card-arrow">↗</span>
+          </div>
+          <div class="card-content">
+            <p class="card-label">NATURE-INSPIRED DESIGN</p>
+            <h3>Bio-inspired Robots</h3>
+            <p>
+              Robotic structures and mechanisms inspired by
+              biological forms and functions.
+            </p>
+          </div>
+        </a>
 
-        <article class="research-card">
-          <span class="card-number">03</span>
-          <h3>Smart Materials</h3>
-          <p>Functional materials for adaptive structures and devices.</p>
-        </article>
+        <a class="research-card research-card-three" href="research.html#smart-materials">
+          <div class="card-top">
+            <span>03 / MATERIALS</span>
+            <span class="card-arrow">↗</span>
+          </div>
+          <div class="card-content">
+            <p class="card-label">FUNCTIONAL STRUCTURES</p>
+            <h3>Smart Materials</h3>
+            <p>
+              Functional materials and structures for
+              responsive and adaptive devices.
+            </p>
+          </div>
+        </a>
 
-        <article class="research-card">
-          <span class="card-number">04</span>
-          <h3>Wearable Devices</h3>
-          <p>Wearable robotic technologies for human-centered applications.</p>
-        </article>
+        <a class="research-card research-card-four" href="research.html#wearables">
+          <div class="card-top">
+            <span>04 / HUMAN-CENTERED</span>
+            <span class="card-arrow">↗</span>
+          </div>
+          <div class="card-content">
+            <p class="card-label">HUMAN–ROBOT INTERACTION</p>
+            <h3>Wearable Devices</h3>
+            <p>
+              Wearable robotic technologies for human-centered
+              assistance and interaction.
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <div class="section-footer">
+        <span>01 — 04 / RESEARCH AREAS</span>
+        <a class="text-link" href="research.html">
+          Explore all research areas →
+        </a>
       </div>
     </section>
 
-    <section class="section section-muted" id="people">
-      <p class="eyebrow">OUR TEAM</p>
-      <h2>People behind the research.</h2>
-      <p class="section-intro">
-        Meet our principal investigator, researchers, and students.
-      </p>
+    <!-- 03. People -->
+    <section class="people-banner" id="people">
+      <div class="container people-inner">
+        <div>
+          <p class="eyebrow">OUR PEOPLE</p>
+          <h2>Ideas become reality<br>through collaboration.</h2>
+        </div>
+
+        <div class="people-copy">
+          <p>
+            Our team combines mechanical design, smart materials,
+            robotics, and experimental engineering to build
+            systems for real-world applications.
+          </p>
+
+          <a class="button button-outline" href="people.html">
+            Meet our team →
+          </a>
+        </div>
+      </div>
     </section>
 
-    <section class="section" id="publications">
-      <p class="eyebrow">SELECTED WORK</p>
-      <h2>Recent publications</h2>
-      <p class="section-intro">
-        Discover our latest research and scientific contributions.
-      </p>
-      <a class="text-link" href="publications.html">
-        Browse publications →
-      </a>
+    <!-- 04. Selected publications -->
+    <section class="section container" id="publications">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">SELECTED WORK</p>
+          <h2>Research that moves<br>ideas forward.</h2>
+        </div>
+
+        <p class="section-description">
+          Selected publications and research outcomes
+          from our laboratory.
+        </p>
+      </div>
+
+      <div class="publication-list">
+        <article class="publication-item">
+          <div class="publication-index">01</div>
+
+          <div class="publication-content">
+            <p class="publication-type">JOURNAL ARTICLE · YEAR</p>
+            <h3>
+              Replace this heading with the title of your first publication.
+            </h3>
+            <p class="publication-authors">
+              Author One, Author Two, Author Three
+            </p>
+            <p class="publication-journal">
+              Journal Name, Volume, Pages, Year
+            </p>
+          </div>
+
+          <a
+            class="publication-link"
+            href="https://doi.org/"
+            aria-label="Open publication DOI"
+          >↗</a>
+        </article>
+
+        <article class="publication-item">
+          <div class="publication-index">02</div>
+
+          <div class="publication-content">
+            <p class="publication-type">JOURNAL ARTICLE · YEAR</p>
+            <h3>
+              Replace this heading with the title of your second publication.
+            </h3>
+            <p class="publication-authors">
+              Author One, Author Two, Author Three
+            </p>
+            <p class="publication-journal">
+              Journal Name, Volume, Pages, Year
+            </p>
+          </div>
+
+          <a
+            class="publication-link"
+            href="https://doi.org/"
+            aria-label="Open publication DOI"
+          >↗</a>
+        </article>
+
+        <article class="publication-item">
+          <div class="publication-index">03</div>
+
+          <div class="publication-content">
+            <p class="publication-type">CONFERENCE PAPER · YEAR</p>
+            <h3>
+              Replace this heading with the title of your third publication.
+            </h3>
+            <p class="publication-authors">
+              Author One, Author Two, Author Three
+            </p>
+            <p class="publication-journal">
+              Conference Name, Year
+            </p>
+          </div>
+
+          <a
+            class="publication-link"
+            href="https://doi.org/"
+            aria-label="Open publication DOI"
+          >↗</a>
+        </article>
+      </div>
+
+      <div class="section-footer">
+        <span>SELECTED PUBLICATIONS</span>
+        <a class="text-link" href="publications.html">
+          Browse all publications →
+        </a>
+      </div>
     </section>
 
-    <section class="section section-muted" id="news">
-      <p class="eyebrow">LAB UPDATES</p>
-      <h2>Latest news</h2>
-      <p class="section-intro">
-        Research highlights, awards, projects, and lab activities.
-      </p>
+    <!-- 05. News -->
+    <section class="news-section" id="news">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">LAB UPDATES</p>
+            <h2>What’s happening<br>at EIR Lab.</h2>
+          </div>
+
+          <p class="section-description">
+            The latest research, achievements, projects,
+            and activities from our laboratory.
+          </p>
+        </div>
+
+        <div class="news-grid">
+          <article class="news-card">
+            <div class="news-visual news-visual-one">
+              <span>RESEARCH</span>
+            </div>
+            <div class="news-meta">
+              <span>PUBLICATION</span>
+              <time datetime="2026-10-01">2026.10</time>
+            </div>
+            <h3>
+              Add a headline about a newly published research paper.
+            </h3>
+          </article>
+
+          <article class="news-card">
+            <div class="news-visual news-visual-two">
+              <span>PEOPLE</span>
+            </div>
+            <div class="news-meta">
+              <span>AWARD</span>
+              <time datetime="2026-09-01">2026.09</time>
+            </div>
+            <h3>
+              Add a headline about an award or team achievement.
+            </h3>
+          </article>
+
+          <article class="news-card">
+            <div class="news-visual news-visual-three">
+              <span>PROJECTS</span>
+            </div>
+            <div class="news-meta">
+              <span>LAB NEWS</span>
+              <time datetime="2026-08-01">2026.08</time>
+            </div>
+            <h3>
+              Add a headline about a new project or laboratory activity.
+            </h3>
+          </article>
+        </div>
+
+        <div class="section-footer">
+          <span>NEWS & ACTIVITIES</span>
+          <a class="text-link" href="news.html">
+            All news →
+          </a>
+        </div>
+      </div>
     </section>
 
-    <section class="section contact-section" id="contact">
-      <p class="eyebrow">GET IN TOUCH</p>
-      <h2>Let's build something meaningful.</h2>
-      <p>EIR Lab · Seoul National University of Science and Technology</p>
-      <a class="text-link" href="mailto:your-email@seoultech.ac.kr">
-        Contact the lab →
-      </a>
+    <!-- 06. Contact -->
+    <section class="contact-section" id="contact">
+      <div class="container contact-inner">
+        <p class="eyebrow">LET'S WORK TOGETHER</p>
+
+        <h2>
+          Building the future<br>
+          <span>of robotics.</span>
+        </h2>
+
+        <p>
+          Interested in our research or joining the team?
+          We welcome opportunities for collaboration.
+        </p>
+
+        <a class="button button-primary" href="mailto:YOUR_EMAIL@seoultech.ac.kr">
+          Get in touch ↗
+        </a>
+      </div>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
-    <span>EIR Lab · SeoulTech</span>
-    <span>© 2026 EIR Lab. All rights reserved.</span>
+    <div class="container footer-main">
+      <div class="footer-brand">
+        <a class="brand" href="#home">EIR<span>LAB</span></a>
+        <p>Engineering Intelligent Robotics Laboratory</p>
+        <p>Seoul National University of Science and Technology</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="research.html">Research</a>
+        <a href="people.html">People</a>
+        <a href="publications.html">Publications</a>
+        <a href="news.html">News</a>
+      </div>
+
+      <div class="footer-contact">
+        <p class="footer-label">CONTACT</p>
+        <a href="mailto:YOUR_EMAIL@seoultech.ac.kr">
+          YOUR_EMAIL@seoultech.ac.kr
+        </a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© 2026 EIR Lab. All rights reserved.</span>
+      <a href="#home">Back to top ↑</a>
+    </div>
   </footer>
 </body>
 </html>
